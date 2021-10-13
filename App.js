@@ -28,6 +28,3 @@ const styles = StyleSheet.create({
   },
   
 });
-
-
-//https://snack.expo.dev/TIrBZ_9IH animated list snack link

@@ -1,12 +1,14 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, StatusBar, Platform, Image } from 'react-native';
+import CustomListview from './List/CustomList';
 
 export default function App() {
+  const BG_IMG = 'https://images.all-free-download.com/images/graphiclarge/green_natural_blur_the_background_01_vector_158354.jpg';
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <Text style={styles.header}>Calm Your Mind</Text>
+      <Image style={StyleSheet.absoluteFill} source = {{uri: BG_IMG}} />
+      <CustomListview />
     </View>
   );
 }
@@ -14,8 +16,18 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#FFFFFF",
   },
+  header: {
+    marginTop: Platform.OS === "android" ? StatusBar.currentHeight + 15 : 45,
+    fontSize: 20,
+    zIndex: 999,
+    marginBottom: 20,
+    fontWeight: 'bold',
+    textAlign: "center",
+  },
+  
 });
+
+
+//https://snack.expo.dev/TIrBZ_9IH animated list snack link

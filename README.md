@@ -2,7 +2,7 @@
 
 ### Calm your mind with soothing sounds of Nature!
 
-### Live Test the App on your PC or Mobile : https://snack.expo.dev/dg94JBeZX
+### Live Test the App on your PC or Mobile : [https://snack.expo.dev/dg94JBeZX](https://snack.expo.dev/cdacgzeduPkKApERnWlnj)
 
 #
 ## For Running Expo on Your PC
